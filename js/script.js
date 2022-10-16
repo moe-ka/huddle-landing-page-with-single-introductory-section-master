@@ -2,6 +2,7 @@ const logo = document.querySelector('.logo');
 
 const lg = document.createElement('img');
 lg.setAttribute('src', 'images/logo.svg');
+lg.setAttribute('alt', 'logo');
 logo.appendChild(lg);
 
 const container = document.querySelector('.container');
@@ -9,6 +10,7 @@ const container = document.querySelector('.container');
 const mockup = container.childNodes[3].children[0];
 const mp = document.createElement('img');
 mp.setAttribute('src', 'images/illustration-mockups.svg');
+mp.setAttribute('alt','mockups-ilustration');
 mockup.appendChild(mp);
 
 const tombol = document.getElementById('register');
