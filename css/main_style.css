@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+:root {
+  --color-Violet: hsl(257, 40%, 49%);
+  --color-Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+body {
+  padding: 4rem;
+  height: 100vh;
+  background-color: var(--color-Violet);
+}
+
+.container .logo {
+  margin-bottom: 4rem;
+}
+.container .landing-wrapper {
+  grid-template-columns: 1.4fr 1fr;
+}
+.container .landing-wrapper .right .title {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+.container .landing-wrapper .right .desc {
+  margin: 1rem 0;
+  font-weight: normal;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+.container .landing-wrapper .right #register {
+  font-family: "Poppins", sans-serif;
+  padding: 0.5rem 3rem;
+  background-color: white;
+  color: var(--color-Violet);
+  border-radius: 2rem;
+  box-shadow: 9px 7px 14px 0px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+.container .social-link {
+  text-align: right;
+}
+.container .social-link i {
+  margin: 0.5rem;
+  font-size: 2rem;
+  color: white;
+}
+
+@media (min-width: 900px) {
+  body {
+    background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+  }
+  .landing-wrapper {
+    display: grid;
+  }
+  .left {
+    margin-right: 3rem;
+  }
+  .right .title {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1130px) {
+  .right .title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 900px) {
+  body {
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    text-align: center;
+  }
+  .container .logo {
+    margin-right: 12rem;
+  }
+  .container .social-link {
+    text-align: center;
+  }
+  .landing-wrapper .right {
+    margin-top: 2rem;
+  }
+  .landing-wrapper .right .title {
+    font-size: 1.7rem;
+  }
+  .landing-wrapper .right #register {
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    padding: 24px;
+  }
+  .container .landing-wrapper .right #register {
+    padding: 0.5rem 5rem;
+  }
+  .container .social-link {
+    text-align: center;
+  }
+  .container .social-link i {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=main_style.css.map */
