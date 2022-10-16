@@ -16,7 +16,17 @@ body {
 .container .landing-wrapper {
   grid-template-columns: 1.4fr 1fr;
 }
+.container .landing-wrapper .left {
+  -webkit-animation: home 1s ease-in-out forwards;
+          animation: home 1s ease-in-out forwards;
+}
+.container .landing-wrapper .right {
+  -webkit-animation: right 1s ease-in-out forwards;
+          animation: right 1s ease-in-out forwards;
+}
 .container .landing-wrapper .right .title {
+  -webkit-animation: typing 5s steps(22) 1s infinite alternate;
+          animation: typing 5s steps(22) 1s infinite alternate;
   font-family: "Poppins", sans-serif;
   color: white;
 }
@@ -34,6 +44,7 @@ body {
   border-radius: 2rem;
   box-shadow: 9px 7px 14px 0px rgba(0, 0, 0, 0.2);
   border: none;
+  cursor: pointer;
 }
 .container .social-link {
   text-align: right;
@@ -44,6 +55,43 @@ body {
   color: white;
 }
 
+@-webkit-keyframes home {
+  from {
+    opacity: 0;
+    transform: translateY(5%) translateX(-5%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes home {
+  from {
+    opacity: 0;
+    transform: translateY(5%) translateX(-5%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes right {
+  from {
+    opacity: 0;
+    transform: translateY(-5%) translateX(5%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes right {
+  from {
+    opacity: 0;
+    transform: translateY(-5%) translateX(5%);
+  }
+  to {
+    opacity: 1;
+  }
+}
 @media (min-width: 900px) {
   body {
     background-image: url(../images/bg-desktop.svg);
@@ -103,4 +151,13 @@ body {
   .container .social-link i {
     font-size: 1rem;
   }
+}
+.black-mode {
+  background-color: black;
+  transition: 1s;
+}
+
+.normal {
+  background-color: var(--color-Violet);
+  transition: 1s;
 }/*# sourceMappingURL=main_style.css.map */
