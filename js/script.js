@@ -28,15 +28,16 @@ const type = document.querySelector('.title span');
 
 
 let i = 0;
-var txt = 'Your Fans Will Love';
-var speed = 200;
+let txt = 'Your Fans Will Love';
+let speed = 400;
 
 function typeWritter(){
     if(i < txt.length){
         type.innerHTML += txt.charAt(i);
-        i++
         setTimeout(typeWritter, speed);
+        i++
     }
 }
-
-typeWritter();
+setInterval(() => {
+    typeWritter();
+}, 1500);

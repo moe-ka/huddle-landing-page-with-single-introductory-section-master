@@ -102,6 +102,18 @@ body{
     .right{
         .title{
             font-size: 3rem;
+            min-height: 100px;
+            max-width: 360px;
+
+        }
+    }
+}
+
+@media (min-width: 1130px) {
+    .right{
+        .title{
+            min-height: 220px;
+            max-width: 450px;
         }
     }
 }
@@ -166,6 +178,17 @@ body{
             }
         }
 
+    }
+}
+@media (max-width: 428px) {
+    .title{
+        min-height: 82px;
+    }
+}
+@media (max-width: 320px) {
+    .container .logo {
+        margin-right: 8rem;
+        margin-bottom: 2rem;
     }
 }
 // black mode
