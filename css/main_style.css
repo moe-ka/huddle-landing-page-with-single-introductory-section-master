@@ -47,6 +47,7 @@ body {
   cursor: pointer;
 }
 .container .social-link {
+  margin-bottom: 2rem;
   text-align: right;
 }
 .container .social-link i {
